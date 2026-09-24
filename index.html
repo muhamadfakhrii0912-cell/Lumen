@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMEN - Kampanye Hemat Energi Listrik SMK Wikrama Bogor</title>
+  <meta name="description" content="LUMEN adalah media kampanye konservasi energi listrik di lingkungan SMK Wikrama Bogor. Memperkuat karakter Adiwiyata Mandiri lewat aksi nyata sehari-hari.">
+  
+  <!-- Tipografi: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet Utama -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. Header & Navigasi
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container navbar">
+      <!-- Identitas Brand & Sekolah -->
+      <a href="#beranda" class="brand" aria-label="LUMEN Beranda">
+        <span class="brand-name">LUMEN</span>
+        <span class="brand-tag">PPLG XI-4 • SMK Wikrama Bogor</span>
+      </a>
+
+      <!-- Menu Navigasi -->
+      <nav aria-label="Navigasi Utama">
+        <ul class="nav-menu">
+          <li><a href="#beranda" class="nav-link active">Beranda</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang Kampanye</a></li>
+          <li><a href="#aksi" class="nav-link">Aksi 3M Wikrama</a></li>
+          <li><a href="#data-teaser" class="nav-link">Data & Fakta</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aksi Cepat Header -->
+      <div class="nav-action">
+        <a href="#aksi" class="btn btn-primary">Mulai Aksi Bijak</a>
+      </div>
+
+      <!-- Tombol Menu Mobile -->
+      <button class="mobile-toggle" aria-label="Buka Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         2. Seksi Beranda (Hero)
+         ======================================================================= -->
+    <section id="beranda" class="hero-section">
+      <div class="container hero-grid">
+        <!-- Kolom Kiri: Pesan Kampanye -->
+        <div class="hero-content">
+          <p class="hero-category">Kampanye Konservasi Energi SMK Wikrama Bogor</p>
+          
+          <h1 class="hero-title">
+            Hemat Listrik di Sekolah, <br>
+            Wujudkan Karakter Adiwiyata.
+          </h1>
+          
+          <p class="hero-slogan">"Satu Kebiasaan, Sejuta Penghematan."</p>
+          
+          <p class="hero-desc">
+            Sebagai Sekolah Adiwiyata Mandiri dengan moto Ilmu yang Amaliah, Amal yang Ilmiah, Akhlakul Karimah, 
+            mari kita jaga kelestarian lingkungan kampus SMK Wikrama Bogor melalui pembiasaan hemat energi listrik di kelas dan laboratorium.
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="#aksi" class="btn btn-primary">Lihat Panduan Aksi 3M</a>
+            <a href="#tentang" class="btn btn-secondary">Pelajari Latar Belakang</a>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan: Simulator Interaktif Ruang Kelas Wikrama -->
+        <div class="simulator-card" aria-label="Simulasi Penggunaan Listrik Ruang Belajar Wikrama">
+          <div class="simulator-top">
+            <h2 class="simulator-heading">Simulasi Listrik Ruang Belajar Wikrama</h2>
+            <span id="simulator-status-badge" class="status-pill status-alert">Beban Penuh</span>
+          </div>
+
+          <p class="simulator-caption">
+            Perhatikan kondisi penggunaan perangkat listrik sebelum dan sesudah budaya hemat diterapkan:
+          </p>
+
+          <div id="simulator-room" class="simulator-body">
+            <div class="device-row">
+              <div class="device-meta">
+                <span id="dot-lamp" class="status-dot"></span>
+                <span class="device-title">Lampu & Kipas Ruang Kelas</span>
+              </div>
+              <span id="text-lamp" class="device-state">Menyala Penuh</span>
+            </div>
+
+            <div class="device-row">
+              <div class="device-meta">
+                <span id="dot-comp" class="status-dot"></span>
+                <span class="device-title">Komputer Laboratorium PPLG</span>
+              </div>
+              <span id="text-comp" class="device-state">Standby Menyala</span>
+            </div>
+
+            <div class="device-row">
+              <div class="device-meta">
+                <span id="dot-ac" class="status-dot"></span>
+                <span class="device-title">Pendingin Ruangan (AC)</span>
+              </div>
+              <span id="text-ac" class="device-state">Suhu 18°C Dingin Berlebih</span>
+            </div>
+          </div>
+
+          <div class="simulator-action">
+            <button id="switch-simulator-btn" class="btn btn-primary btn-block" type="button">
+              Simulasikan Mode Hemat Listrik
+            </button>
+            <p class="simulator-hint">
+              Klik tombol di atas untuk menerapkan simulasi budaya 3M di lingkungan sekolah.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. Seksi Tentang Kampanye
+         ======================================================================= -->
+    <section id="tentang" class="section">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-label">Budaya Adiwiyata Wikrama</span>
+          <h2 class="section-heading">Mengapa Kampanye Ini Penting bagi Wikrama?</h2>
+          <p class="section-lead">
+            SMK Wikrama Bogor dikenal dengan komitmen tinggi terhadap pelestarian lingkungan hidup dan pembiasaan akhlak terpuji.
+          </p>
+        </div>
+
+        <div class="about-layout">
+          <!-- Cerita Konteks Nyata Wikrama -->
+          <div class="about-narrative">
+            <p>
+              Dengan ribuan siswa dan puluhan laboratorium komputer aktif, kebutuhan energi listrik harian di kampus SMK Wikrama Bogor sangat besar. Berbagai fasilitas seperti laboratorium kejuruan PPLG, ruang kelas, proyektor, hingga pendingin ruangan bekerja menunjang aktivitas belajar setiap hari.
+            </p>
+            <p>
+              Namun, predikat Sekolah Adiwiyata Mandiri menuntut kita untuk selalu mawas diri. Energi listrik dapat terbuang tanpa disadari saat lampu atau kipas tetap menyala di ruang kosong saat jam istirahat, salat berjamaah, atau saat komputer praktikum dibiarkan dalam kondisi standby semalaman.
+            </p>
+            <p>
+              Melalui LUMEN, Kelompok 7 PPLG XI-4 mengajak seluruh warga sekolah untuk menegakkan kembali prinsip efisiensi energi. Menjaga kelestarian lingkungan dan tidak berbuat boros adalah wujud nyata dari pengamalan Akhlakul Karimah.
+            </p>
+          </div>
+
+          <!-- 3 Pilar Pendekatan 3M Energi Wikrama -->
+          <div class="pillars-list">
+            <div class="pillar-item">
+              <div class="pillar-number">01</div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Mematikan (Off)</h3>
+                <p class="pillar-desc">
+                  Mematikan saklar lampu kelas saat ruangan kosong, mematikan kipas angin saat jam olahraga, serta mematikan komputer dan monitor setelah praktikum selesai.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-number">02</div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Mencabut (Unplug)</h3>
+                <p class="pillar-desc">
+                  Mencabut colokan charger laptop, proyektor, dan saklar terminal meja laboratorium untuk menghilangkan kebocoran arus listrik standby.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-number">03</div>
+              <div class="pillar-content">
+                <h3 class="pillar-title">Mengatur (Adjust)</h3>
+                <p class="pillar-desc">
+                  Mengoptimalkan ventilasi dan pencahayaan alami jendela gedung hijau Wikrama serta mengatur pendingin ruangan pada suhu ideal 24°C hingga 25°C.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. Seksi Aksi & Tips Praktis (3 Area Sekolah)
+         ======================================================================= -->
+    <section id="aksi" class="section section-alt">
+      <div class="container">
+        <div class="section-intro">
+          <span class="section-label">Aksi Lapangan</span>
+          <h2 class="section-heading">Penerapan Budaya Hemat di Tiga Area Sekolah</h2>
+          <p class="section-lead">
+            Panduan praktis berlandaskan budaya kerja 5R dan K3LH untuk siswa, guru, serta staf SMK Wikrama Bogor.
+          </p>
+        </div>
+
+        <div class="tips-container">
+          <!-- Area 1: Ruang Kelas -->
+          <article class="area-card">
+            <div class="area-header">
+              <span class="area-tag">Area Kelas</span>
+              <h3 class="area-title">Ruang Kelas Teori</h3>
+            </div>
+            <p class="area-desc">
+              Gedung sekolah Wikrama dirancang dengan sirkulasi udara dan jendela yang asri untuk mendukung efisiensi energi.
+            </p>
+            <ul class="area-checklist">
+              <li>Buka gorden jendela saat siang hari untuk memanfaatkan cahaya matahari alami.</li>
+              <li>Matikan saklar lampu dan kipas ketika kelas ditinggalkan untuk salat berjamaah atau jam olahraga.</li>
+              <li>Pastikan piket kelas mematikan seluruh saklar sebelum meninggalkan ruangan di sore hari.</li>
+            </ul>
+          </article>
+
+          <!-- Area 2: Lab Komputer PPLG -->
+          <article class="area-card">
+            <div class="area-header">
+              <span class="area-tag">Area Praktikum</span>
+              <h3 class="area-title">Laboratorium Komputer PPLG</h3>
+            </div>
+            <p class="area-desc">
+              Sesuai SOP 5R laboratorium kejuruan, efisiensi perangkat komputer adalah tanggung jawab setiap praktikan.
+            </p>
+            <ul class="area-checklist">
+              <li>Lakukan shutdown sistem operasi komputer dengan benar setelah jam koding selesai.</li>
+              <li>Tekan tombol power monitor hingga mati agar tidak memicu konsumsi daya standby.</li>
+              <li>Matikan saklar utama pada terminal stop kontak meja praktikum sebelum keluar lab.</li>
+            </ul>
+          </article>
+
+          <!-- Area 3: Ruang Guru & Fasilitas Umum -->
+          <article class="area-card">
+            <div class="area-header">
+              <span class="area-tag">Area Fasilitas</span>
+              <h3 class="area-title">Ruang Guru & Fasilitas Umum</h3>
+            </div>
+            <p class="area-desc">
+              Pemanfaatan pendingin udara dan colokan perangkat elektronik secara teratur dan bertanggung jawab.
+            </p>
+            <ul class="area-checklist">
+              <li>Atur suhu pendingin ruangan (AC) pada rentang ideal 24°C sampai 25°C.</li>
+              <li>Pastikan pintu dan jendela tertutup rapat saat pendingin ruangan sedang beroperasi.</li>
+              <li>Cabut adaptor charger smartphone atau laptop ketika indikator baterai sudah terisi penuh.</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Komitmen Aksi Siswa -->
+        <div class="commitment-panel">
+          <div class="commitment-intro">
+            <h3 class="commitment-heading">Komitmen Aksi Siswa Wikrama</h3>
+            <p class="commitment-sub">
+              Pilih kebiasaan baik yang siap kamu terapkan di lingkungan sekolah hari ini:
+            </p>
+          </div>
+
+          <div class="commitment-options">
+            <label class="option-item">
+              <input type="checkbox" class="action-checkbox" id="check-1">
+              <span class="option-text">Saya akan mematikan saklar lampu dan kipas saat meninggalkan kelas kosong.</span>
+            </label>
+
+            <label class="option-item">
+              <input type="checkbox" class="action-checkbox" id="check-2">
+              <span class="option-text">Saya akan shutdown komputer dan mematikan monitor lab PPLG setelah selesai praktikum.</span>
+            </label>
+
+            <label class="option-item">
+              <input type="checkbox" class="action-checkbox" id="check-3">
+              <span class="option-text">Saya akan mencabut colokan charger dan kabel adaptor yang sudah selesai digunakan.</span>
+            </label>
+          </div>
+
+          <div class="commitment-status">
+            <div class="status-summary">
+              <span class="status-title">Status Komitmen:</span>
+              <span id="commitment-count" class="status-value">0 dari 3 Aksi Terpilih</span>
+            </div>
+            <div class="progress-track">
+              <div id="commitment-fill" class="progress-bar"></div>
+            </div>
+            <p id="commitment-feedback" class="status-note">
+              Pilih aksi nyata yang siap kamu lakukan di sekolah hari ini.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. Seksi Teaser Data & Fakta (Menuju Fase 2)
+         ======================================================================= -->
+    <section id="data-teaser" class="section">
+      <div class="container">
+        <div class="teaser-box">
+          <div class="teaser-text">
+            <span class="section-label">Fase Berikutnya</span>
+            <h2 class="teaser-heading">Data & Fakta Listrik di Kampus SMK Wikrama Bogor</h2>
+            <p class="teaser-lead">
+              "Seberapa banyak listrik yang bisa kita hemat dari kebiasaan sederhana? Mari buktikan lewat data nyata di sekolah kita."
+            </p>
+            <p class="teaser-desc">
+              Data yang akan disajikan pada Fase 2 dihimpun dari hasil observasi lapangan dan angket kebiasaan warga sekolah, mengintegrasikan pembelajaran lintas mata pelajaran:
+            </p>
+            
+            <div class="subject-tags">
+              <span class="subject-item">PABP</span>
+              <span class="subject-item">Pendidikan Pancasila</span>
+              <span class="subject-item">Matematika</span>
+              <span class="subject-item">Bahasa Indonesia</span>
+              <span class="subject-item">KIK</span>
+              <span class="subject-item">PPLG</span>
+            </div>
+          </div>
+
+          <div class="teaser-card-preview">
+            <div class="preview-badge">Pemberitahuan Fase 2</div>
+            <h3 class="preview-title">Integrasi Visualisasi Data Angket</h3>
+            <p class="preview-desc">
+              Grafik interaktif dari data angket dan observasi kampus sedang disiapkan dan akan ditampilkan pada pembaruan tahap berikutnya menggunakan Chart.js.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       6. Footer Identitas & Kredensial
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-layout">
+        <!-- Profil LUMEN & Sekolah -->
+        <div class="footer-about">
+          <span class="footer-brand-title">LUMEN</span>
+          <p class="footer-tagline">"Satu Kebiasaan, Sejuta Penghematan."</p>
+          <p class="footer-summary">
+            Media kampanye konservasi energi listrik berbasis web di SMK Wikrama Bogor. Dikembangkan sebagai wujud nyata pengamalan karakter Adiwiyata Mandiri melalui proyek lintas mata pelajaran.
+          </p>
+        </div>
+
+        <!-- Tautan Navigasi Cepat -->
+        <div class="footer-nav">
+          <h4 class="footer-header">Navigasi Halaman</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Kampanye</a></li>
+            <li><a href="#aksi">Aksi 3M Wikrama</a></li>
+            <li><a href="#data-teaser">Data & Fakta Sekolah</a></li>
+          </ul>
+        </div>
+
+        <!-- Identitas Kelompok & Sekolah -->
+        <div class="footer-meta">
+          <h4 class="footer-header">Identitas Pengembang</h4>
+          <div class="meta-box">
+            <p><strong>Sekolah:</strong> SMK Wikrama Bogor</p>
+            <p><strong>Kelompok:</strong> Kelompok 7</p>
+            <p><strong>Kelas:</strong> PPLG XI-4</p>
+            <p><strong>Fokus:</strong> Konservasi Energi Listrik</p>
+            <p><strong>Tahap:</strong> Fase 1 (Landing Page Kampanye)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2026 LUMEN Kelompok 7 PPLG XI-4 SMK Wikrama Bogor. Seluruh hak cipta dilindungi.</p>
+        <p>Ilmu yang Amaliah, Amal yang Ilmiah, Akhlakul Karimah.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Interaktif -->
+  <script src="js/script.js"></script>
+</body>
+</html>
