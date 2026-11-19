@@ -23,8 +23,11 @@
     <div class="container navbar">
       <!-- Identitas Brand & Sekolah -->
       <a href="#beranda" class="brand" aria-label="LUMEN Beranda">
-        <span class="brand-name">LUMEN</span>
-        <span class="brand-tag">PPLG XI-4 • SMK Wikrama Bogor</span>
+        <img src="assets/logo-wikrama.jpg" alt="Logo SMK Wikrama Kota Bogor" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-name">LUMEN</span>
+          <span class="brand-tag">PPLG XI-4 • SMK Wikrama Bogor</span>
+        </div>
       </a>
 
       <!-- Menu Navigasi -->
@@ -33,7 +36,7 @@
           <li><a href="#beranda" class="nav-link active">Beranda</a></li>
           <li><a href="#tentang" class="nav-link">Tentang Kampanye</a></li>
           <li><a href="#aksi" class="nav-link">Aksi 3M Wikrama</a></li>
-          <li><a href="#data-teaser" class="nav-link">Data & Fakta</a></li>
+          <li><a href="#data-fakta" class="nav-link">Data & Fakta</a></li>
         </ul>
       </nav>
 
@@ -142,17 +145,24 @@
         </div>
 
         <div class="about-layout">
-          <!-- Cerita Konteks Nyata Wikrama -->
-          <div class="about-narrative">
-            <p>
-              Dengan ribuan siswa dan puluhan laboratorium komputer aktif, kebutuhan energi listrik harian di kampus SMK Wikrama Bogor sangat besar. Berbagai fasilitas seperti laboratorium kejuruan PPLG, ruang kelas, proyektor, hingga pendingin ruangan bekerja menunjang aktivitas belajar setiap hari.
-            </p>
-            <p>
-              Namun, predikat Sekolah Adiwiyata Mandiri menuntut kita untuk selalu mawas diri. Energi listrik dapat terbuang tanpa disadari saat lampu atau kipas tetap menyala di ruang kosong saat jam istirahat, salat berjamaah, atau saat komputer praktikum dibiarkan dalam kondisi standby semalaman.
-            </p>
-            <p>
-              Melalui LUMEN, Kelompok 7 PPLG XI-4 mengajak seluruh warga sekolah untuk menegakkan kembali prinsip efisiensi energi. Menjaga kelestarian lingkungan dan tidak berbuat boros adalah wujud nyata dari pengamalan Akhlakul Karimah.
-            </p>
+          <!-- Kolom Kiri: Visual & Narasi Konteks Nyata Wikrama -->
+          <div class="about-media">
+            <div class="about-image-card">
+              <img src="assets/wikrama/gedung-kampus.jpg" alt="Gedung Kampus Hijau dan Lapangan SMK Wikrama Bogor" class="about-featured-img">
+              <div class="about-image-caption">
+                <span class="caption-tag">Kampus Adiwiyata Mandiri</span>
+                <span class="caption-desc">Gedung hijau ramah lingkungan SMK Wikrama Bogor dengan sirkulasi udara dan cahaya alami.</span>
+              </div>
+            </div>
+            
+            <div class="about-narrative">
+              <p>
+                Dengan ribuan siswa dan puluhan laboratorium komputer aktif, kampus SMK Wikrama Bogor memerlukan daya listrik yang besar untuk mendukung kegiatan belajar mengajar setiap hari.
+              </p>
+              <p>
+                Sebagai <strong>Sekolah Adiwiyata Mandiri</strong>, kita wajib menjaga keseimbangan antara kemajuan teknologi kejuruan dan kelestarian lingkungan hidup. Gerakan hemat listrik di kelas dan laboratorium merupakan wujud nyata pengamalan <em>Akhlakul Karimah</em>.
+              </p>
+            </div>
           </div>
 
           <!-- 3 Pilar Pendekatan 3M Energi Wikrama -->
@@ -207,6 +217,9 @@
         <div class="tips-container">
           <!-- Area 1: Ruang Kelas -->
           <article class="area-card">
+            <div class="area-image-wrapper">
+              <img src="assets/wikrama/ruang-kelas.png" alt="Suasana Ruang Kelas Belajar SMK Wikrama Bogor" class="area-card-img">
+            </div>
             <div class="area-header">
               <span class="area-tag">Area Kelas</span>
               <h3 class="area-title">Ruang Kelas Teori</h3>
@@ -223,6 +236,9 @@
 
           <!-- Area 2: Lab Komputer PPLG -->
           <article class="area-card">
+            <div class="area-image-wrapper">
+              <img src="assets/wikrama/lab-komputer.jpg" alt="Laboratorium Komputer dan SOC SMK Wikrama Bogor" class="area-card-img">
+            </div>
             <div class="area-header">
               <span class="area-tag">Area Praktikum</span>
               <h3 class="area-title">Laboratorium Komputer PPLG</h3>
@@ -239,6 +255,9 @@
 
           <!-- Area 3: Ruang Guru & Fasilitas Umum -->
           <article class="area-card">
+            <div class="area-image-wrapper">
+              <img src="assets/wikrama/perpustakaan.png" alt="Fasilitas Perpustakaan dan Ruang Bersama SMK Wikrama Bogor" class="area-card-img">
+            </div>
             <div class="area-header">
               <span class="area-tag">Area Fasilitas</span>
               <h3 class="area-title">Ruang Guru & Fasilitas Umum</h3>
@@ -297,37 +316,115 @@
     </section>
 
     <!-- =======================================================================
-         5. Seksi Teaser Data & Fakta (Menuju Fase 2)
+         5. Seksi Data & Fakta: Bukti Nyata Hasil Kuesioner Energi Siswa (Fase 2)
          ======================================================================= -->
-    <section id="data-teaser" class="section">
+    <section id="data-fakta" class="section">
       <div class="container">
-        <div class="teaser-box">
-          <div class="teaser-text">
-            <span class="section-label">Fase Berikutnya</span>
-            <h2 class="teaser-heading">Data & Fakta Listrik di Kampus SMK Wikrama Bogor</h2>
-            <p class="teaser-lead">
-              "Seberapa banyak listrik yang bisa kita hemat dari kebiasaan sederhana? Mari buktikan lewat data nyata di sekolah kita."
-            </p>
-            <p class="teaser-desc">
-              Data yang akan disajikan pada Fase 2 dihimpun dari hasil observasi lapangan dan angket kebiasaan warga sekolah, mengintegrasikan pembelajaran lintas mata pelajaran:
-            </p>
-            
-            <div class="subject-tags">
-              <span class="subject-item">PABP</span>
-              <span class="subject-item">Pendidikan Pancasila</span>
-              <span class="subject-item">Matematika</span>
-              <span class="subject-item">Bahasa Indonesia</span>
-              <span class="subject-item">KIK</span>
-              <span class="subject-item">PPLG</span>
+        <!-- Pengantar Seksi -->
+        <div class="section-intro">
+          <span class="section-label">Bukti Nyata Kampanye (Fase 2)</span>
+          <h2 class="section-heading">Data & Fakta Perilaku Energi Siswa SMK Wikrama Bogor</h2>
+          <p class="section-lead">
+            Temuan berbasis data riil dari 636 responden siswa kelas XI lintas 7 kompetensi keahlian mengenai kebiasaan konservasi listrik di lingkungan sekolah.
+          </p>
+        </div>
+
+        <!-- 4 Kartu Statistik Ringkasan (KPI Cards) -->
+        <div class="stats-overview-grid">
+          <div class="stat-card">
+            <span class="stat-num">636</span>
+            <span class="stat-label">Siswa Responden</span>
+            <span class="stat-sub">Partisipasi 99.4% dari total 639 siswa kelas XI terdata</span>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-num">3.36 <small>/ 4.00</small></span>
+            <span class="stat-label">Rata-Rata Indeks Perilaku</span>
+            <span class="stat-sub">Kategori umum: <strong>Sangat Baik</strong> (rentang 3.26 - 4.00)</span>
+          </div>
+
+          <div class="stat-card">
+            <span class="stat-num">96.2%</span>
+            <span class="stat-label">Kategori Positif</span>
+            <span class="stat-sub">Gabungan kategori Sangat Baik (59.4%) & Baik (36.8%)</span>
+          </div>
+
+          <div class="stat-card stat-card-highlight">
+            <span class="stat-num">176 Siswa</span>
+            <span class="stat-label">Responden Jurusan PPLG</span>
+            <span class="stat-sub">Populasi terbanyak & prioritas disiplin efisiensi lab koding</span>
+          </div>
+        </div>
+
+        <!-- Grid Visualisasi Grafik Chart.js -->
+        <div class="charts-grid">
+          <!-- Grafik 1: Perbandingan Jurusan -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <span class="chart-badge">Komparasi Jurusan</span>
+              <h3 class="chart-title">Rerata Perilaku Hemat Listrik per Konsentrasi Keahlian</h3>
+            </div>
+            <div class="chart-canvas-container">
+              <canvas id="chart-jurusan" aria-label="Grafik Rata-rata Skor Hemat Energi per Jurusan" role="img"></canvas>
+            </div>
+            <div class="chart-insight">
+              <p>
+                <strong>Temuan Kunci:</strong> Jurusan PPLG mencatat jumlah responden terbanyak (176 siswa), namun memiliki rerata skor terendah (3.24) akibat tingginya durasi pemakaian perangkat komputer di lab. Hal ini menegaskan urgensi kampanye LUMEN berfokus pada disiplin lab PPLG.
+              </p>
             </div>
           </div>
 
-          <div class="teaser-card-preview">
-            <div class="preview-badge">Pemberitahuan Fase 2</div>
-            <h3 class="preview-title">Integrasi Visualisasi Data Angket</h3>
-            <p class="preview-desc">
-              Grafik interaktif dari data angket dan observasi kampus sedang disiapkan dan akan ditampilkan pada pembaruan tahap berikutnya menggunakan Chart.js.
+          <!-- Grafik 3: Distribusi Kategori -->
+          <div class="chart-card">
+            <div class="chart-header">
+              <span class="chart-badge">Distribusi Responden</span>
+              <h3 class="chart-title">Proporsi Kategori Pemahaman Hemat Energi</h3>
+            </div>
+            <div class="chart-canvas-container chart-doughnut-container">
+              <canvas id="chart-kategori" aria-label="Grafik Distribusi Kategori Perilaku Siswa" role="img"></canvas>
+            </div>
+            <div class="chart-insight">
+              <p>
+                <strong>Temuan Kunci:</strong> Sebanyak 96.2% siswa (378 Sangat Baik, 234 Baik) telah memiliki kesadaran konservasi listrik, menjadi modal utama untuk mewujudkan budaya hemat energi berkelanjutan di Wikrama.
+              </p>
+            </div>
+          </div>
+
+          <!-- Grafik 2: 10 Indikator Butir Perilaku (Full Width) -->
+          <div class="chart-card chart-card-wide">
+            <div class="chart-header">
+              <span class="chart-badge">Analisis Butir Kebiasaan</span>
+              <h3 class="chart-title">Evaluasi 10 Indikator Perilaku Listrik Siswa</h3>
+            </div>
+            <div class="chart-canvas-container chart-wide-container">
+              <canvas id="chart-butir" aria-label="Grafik Evaluasi 10 Butir Perilaku Listrik Siswa" role="img"></canvas>
+            </div>
+            <div class="chart-insight">
+              <p>
+                <strong>Temuan Kunci:</strong> Kebiasaan mencabut steker (P06: 3.45) sudah diterapkan secara konsisten, namun keberanian saling mengingatkan teman (P09: 3.22) dan membatasi waktu layar gawai (P04: 3.22) masih menjadi aspek yang perlu ditingkatkan bersama.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Integrasi Konteks Lintas Mata Pelajaran -->
+        <div class="subject-integration-banner">
+          <div class="integration-image-wrap">
+            <img src="assets/wikrama/aktivitas-3.png" alt="Aktivitas Siswa-siswi SMK Wikrama Bogor" class="integration-img">
+          </div>
+          <div class="integration-content">
+            <span class="integration-tag">Kolaborasi Lintas Mapel</span>
+            <h3 class="integration-title">Dari Pengolahan Data Menuju Aksi Nyata Berkelanjutan</h3>
+            <p class="integration-desc">
+              Data angket kuesioner skala Likert diolah melalui perhitungan statistika deskriptif pada mata pelajaran <strong>Matematika</strong>, dikaitkan dengan nilai amanah menjaga alam pada <strong>PABP</strong> dan <strong>Pendidikan Pancasila</strong>, serta diwujudkan menjadi sistem visualisasi data berbasis web oleh konsentrasi keahlian <strong>PPLG</strong>.
             </p>
+            <div class="subject-tags">
+              <span class="subject-item">Matematika (Statistika)</span>
+              <span class="subject-item">PPLG (Data & Visualisasi)</span>
+              <span class="subject-item">PABP (Amanah Lingkungan)</span>
+              <span class="subject-item">Pendidikan Pancasila (Gotong Royong)</span>
+              <span class="subject-item">KIK & Bahasa Indonesia</span>
+            </div>
           </div>
         </div>
       </div>
@@ -342,7 +439,10 @@
       <div class="footer-layout">
         <!-- Profil LUMEN & Sekolah -->
         <div class="footer-about">
-          <span class="footer-brand-title">LUMEN</span>
+          <div class="footer-brand-row">
+            <img src="assets/logo-wikrama.jpg" alt="Logo SMK Wikrama Kota Bogor" class="footer-logo">
+            <span class="footer-brand-title">LUMEN</span>
+          </div>
           <p class="footer-tagline">"Satu Kebiasaan, Sejuta Penghematan."</p>
           <p class="footer-summary">
             Media kampanye konservasi energi listrik berbasis web di SMK Wikrama Bogor. Dikembangkan sebagai wujud nyata pengamalan karakter Adiwiyata Mandiri melalui proyek lintas mata pelajaran.
@@ -356,7 +456,7 @@
             <li><a href="#beranda">Beranda</a></li>
             <li><a href="#tentang">Tentang Kampanye</a></li>
             <li><a href="#aksi">Aksi 3M Wikrama</a></li>
-            <li><a href="#data-teaser">Data & Fakta Sekolah</a></li>
+            <li><a href="#data-fakta">Data & Fakta Sekolah</a></li>
           </ul>
         </div>
 
@@ -368,7 +468,7 @@
             <p><strong>Kelompok:</strong> Kelompok 7</p>
             <p><strong>Kelas:</strong> PPLG XI-4</p>
             <p><strong>Fokus:</strong> Konservasi Energi Listrik</p>
-            <p><strong>Tahap:</strong> Fase 1 (Landing Page Kampanye)</p>
+            <p><strong>Tahap:</strong> Fase 2 (Penyajian Data & Grafik Terukur)</p>
           </div>
         </div>
       </div>
@@ -380,7 +480,14 @@
     </div>
   </footer>
 
-  <!-- Script Interaktif -->
+  <!-- Library Visualisasi Grafik (Fase 2) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>window.Chart || document.write('<script src="js/chart.umd.min.js"><\/script>')</script>
+
+  <!-- Data Perilaku Energi Siswa (Fallback Lokal) -->
+  <script src="data-perilaku-energi.js"></script>
+
+  <!-- Script Interaktif & Logika Utama -->
   <script src="js/script.js"></script>
 </body>
 </html>

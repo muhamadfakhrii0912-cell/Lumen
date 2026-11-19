@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none">
+  <!-- Rounded Shield / Base -->
+  <rect x="4" y="4" width="40" height="40" rx="12" fill="#1B4D3E"/>
+  <!-- Leaf subtle motif -->
+  <path d="M14 34C14 26 22 20 30 18C28 26 22 34 14 34Z" fill="#2D6A4F" opacity="0.6"/>
+  <!-- Lightbulb filament & body -->
+  <path d="M24 10C18.477 10 14 14.477 14 20C14 23.5 15.8 26.5 18.5 28.2V31C18.5 31.8 19.2 32.5 20 32.5H28C28.8 32.5 29.5 31.8 29.5 31V28.2C32.2 26.5 34 23.5 34 20C34 14.477 29.523 10 24 10Z" fill="#F59E0B"/>
+  <!-- Lightbulb Base Socket -->
+  <rect x="21" y="34" width="6" height="2" rx="1" fill="#FEF3C7"/>
+  <path d="M22 37H26" stroke="#FEF3C7" stroke-width="2" stroke-linecap="round"/>
+  <!-- Central Energy Spark -->
+  <path d="M24 14V19M21 21L27 21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+</svg>
