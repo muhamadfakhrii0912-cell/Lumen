@@ -3,3 +3,9 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# Internal Planning & Agent Configuration
+.agents/
+AGENTS.md
+PRD.md
+DESIGN.md
